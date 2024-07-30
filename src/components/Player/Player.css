@@ -1,0 +1,70 @@
+.player {
+  z-index: 3;
+  width: 40%;
+  padding: 2rem;
+}
+
+.inner-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.cover {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.artist {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.pause,
+.play {
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.time {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 100vw;
+    padding: 0;
+    height: 80%;
+  }
+
+  .title,.artist{
+    padding-left: 2rem;
+  }
+  .cover {
+    height: 40%;
+  }
+}
